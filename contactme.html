@@ -52,12 +52,18 @@
     <label for="attach"> Attachments: <span class="rpd">*</label><br/>
     <input type="file" name="attach" id="attach"/>
 
+<label for="file" name="priority">Priorty: <span class="rpd">*</label><br/>
     <select name="priority" id="priority">
+        <option disabeled selected value>-- Select an option
         <option value="low">Low</option>
         <option value="med">Medium</option>
         <option value="high">High</option>
         <option value="crit">Critical</option>
     </select><br/><br/>
+
+    <input type= "radio" name="flwup" id="flyup" value="yes"/>Yes
+    <input type= "radio" name="flwup" id="flyup" value="no"/>No
+    <br/><br/>
 
     <input type="Submit" value="Submit" id="sbutton"/>
     </div>
