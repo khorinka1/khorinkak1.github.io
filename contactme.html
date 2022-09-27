@@ -20,24 +20,45 @@
         padding: 15px;
         border-radius: 10px;
     }
+    #fdiv{
+        background-color: #ccc;
+        border-radius: 3px;
+        width: 50%
+        text-align: center;
+        /* 30 top/bot, 15 1/r */
+        padding: 30 px;
+    }
+    textarea{
+        body { background-color: gray}
+
+    }
 </style>
 <body>
     <h1>Contact Me</h1>
     <form action="#" method="post">
     <div>
-    <label for="myname">Name: </label>
-    <input type ="text" name="myname" id="myname" required><br/>
+    <label for="myname">Name: <span class="rpd">*</label><br/>
+    <input type ="text" name="myname" id="myname" required>
 
- <label for="subject">subject: </label>
+ <label for="subject">subject: <span class="rpd">*</label><br/>
     <input type="text" name="subject" id="subject" required
-        placeholder="CS 101" required/><br/>
+        placeholder="CS 101" required/>
 
-    <textarea name="tbody" id="tbody" required>
-    Enter message....
+    <textarea name="tbody" id="tbody"
+    placeholder="enter message..." required>
+
     </textarea><br/>
 
-    <label for="attach"> Attachments: </label><br/>
+    <label for="attach"> Attachments: <span class="rpd">*</label><br/>
     <input type="file" name="attach" id="attach"/>
+
+    <select name="priority" id="priority">
+        <option value="low">Low</option>
+        <option value="med">Medium</option>
+        <option value="high">High</option>
+        <option value="crit">Critical</option>
+    </select><br/><br/>
+
     <input type="Submit" value="Submit" id="sbutton"/>
     </div>
     </form>
